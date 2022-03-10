@@ -17,13 +17,13 @@ class CocktailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         fetchData(from: Link.cocktailApi.rawValue)
-        
     }
 
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         drink?.drinks.count ?? 0
+        
     }
 
     
